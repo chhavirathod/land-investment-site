@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logo {
+  height: 5em;
+  width: 10em;
+}
+
+.dholera_blue{
+    color: #ffffff;
+    text-shadow: -4px 4px rgb(39, 53, 99);
+}
+
+.year_bold{
+    font-family: 'Tulpen One', sans-serif;
+    font-weight: 100;
+    letter-spacing: -2px;
+}
+
+.effect:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px #0d4984;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+.effect:hover:after { transform: scaleX(1); }
+
+.marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Common reel styling */
+.reel1, .reel2 {
+  display: flex;
+  width: max-content;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* Scroll reel1 to the left */
+.reel1 {
+  animation-name: scroll-left;
+}
+
+/* Scroll reel2 to the right */
+.reel2 {
+  animation-name: scroll-right;
+}
+
+/* Pause only the hovered reel */
+.reel1:hover {
+  animation-play-state: paused;
+}
+
+.reel2:hover {
+  animation-play-state: paused;
+}
+
+
+/* Keyframes for left scroll */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Keyframes for right scroll */
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
+
+/* .big-shoulders-year_bold {
+  
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+/* #0d4984 */

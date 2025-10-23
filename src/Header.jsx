@@ -5,7 +5,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="flex flex-wrap items-center justify-between bg-white text-black shadow px-4">
+    <header className="flex flex-wrap items-center justify-between bg-white text-black px-4">
       <div className="flex items-center justify-between">
         <img src={logo} alt="Logo" className="logo pl-4" />
         <h1 className="text-xl md:text-2xl font-bold pl-4">
@@ -26,7 +26,7 @@ export default function Header() {
         </li>
         <li className="p-4 md:p-6 effect text-center">
           <a
-            href="https://drive.google.com/file/d/1auqMFrYo3i2SDDQBa6Ax6mizxRWBy9_g/view?usp=sharing"
+            href="https://drive.google.com/drive/folders/1pN9k-W7kwthuryyuMNFqSwReSC-kDxYU?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >

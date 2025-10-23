@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* src\index.css */
 .logo {
   height: 5em;
   width: 10em;
@@ -34,7 +34,7 @@
 }
 
 /* Common reel styling */
-.reel1, .reel2 {
+.reel1, .reel2, .reel3 {
   display: flex;
   width: max-content;
   animation-duration: 20s;
@@ -44,6 +44,10 @@
 
 /* Scroll reel1 to the left */
 .reel1 {
+  animation-name: scroll-left;
+}
+
+.reel3 {
   animation-name: scroll-left;
 }
 
@@ -61,6 +65,9 @@
   animation-play-state: paused;
 }
 
+.reel3:hover {
+  animation-play-state: paused;
+}
 
 /* Keyframes for left scroll */
 @keyframes scroll-left {

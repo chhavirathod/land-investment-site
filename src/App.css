@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* src\App.css */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -28,11 +28,11 @@
   }
 }
 
-@media (width<48rem){
+/* @media (width<48rem){
   .navbar{
     display: none;
   }
-}
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
